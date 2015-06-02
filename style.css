@@ -1,10 +1,84 @@
 /* Bridge theme CSS overrides  */
 
-/* Font REM resets*/
+/* 
+ *
+ * REM Font Reset
+ *
+*/
 
-/* Media Queries  */
+html {
+  font-size: 16px;   // 1rem = 16px
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.3rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+p {
+  font-size: 1rem;
+}
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.6rem;
+}
 
-/* Gravity Forms */
+/* 
+ *
+ * Media Queries
+ *
+*/
 
-/* Responsive Menus */
+@media screen and (min-width: 1000px) {
+  .mobile-only {
+  	display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  .desktop-only {
+  	display: none;
+  }
+}
 
+/* 
+ *
+ * Gravity Forms
+ *
+*/
+
+footer .gform_wrapper .gform_footer {
+  padding: 0;
+  margin: 0 0 0;
+}
+
+/**
+ * 
+ * Responsive Menus
+ *
+**/
+
+.popup_menu .line, .popup_menu .line:after, .popup_menu .line:before {
+  width: 26px;
+  height: 3px;
+  background-color: #FFF;
+}
+.popup_menu .line:after {
+  top: 7px;
+}
+.popup_menu .line:before {
+  top: -7px;
+}
+.popup_menu_inner {
+  top: -3px;
+}
